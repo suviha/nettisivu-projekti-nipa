@@ -1,0 +1,182 @@
+/*OTSIKKO JA BODY*/
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  color: white;
+  background-image: url("noonanipa.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header h1 {
+  font-size: 40px;
+}
+/*NAVIGOINTIPALKKI TYYLIT*/
+.navbar {
+	overflow: hidden;
+	background-color:#3b2e26;
+}
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+.navbar a.oikea {
+	float: right;
+	font-size: 15px;
+}
+.navbar a.aktiivinen{
+	background-color: #856656;
+	color: white;
+}
+.navbar a:hover {
+	background-color:#bd8b61;
+	color: white;
+}
+/*PÄÄ JA SIVUOSIOIDEN MUOTOILU*/
+*{
+	box-sizing: border-box;
+}
+.osiot{
+	display: flex;
+	flex-wrap: wrap;
+}
+/*sivuosio*/
+.sivuosio h5 {
+	font-weight: bold;
+	font-size: 17px;
+}
+.sivuosio{
+	flex: 20%;
+	background-color:#986d57;
+	padding: 20px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+ul.yhteystiedot {
+	list-style-type: none;
+	padding: 0;
+}
+li a {
+  display: block;
+  padding: 16px;
+  text-decoration: none; 
+}
+/*Pääosio*/
+.paaosio {
+	flex: 80%;
+	background-color:#a27c68;
+	padding: 20px;
+	font-size: 18px;
+}
+.paaosio p {
+	 border-top: 3px dashed #3b2e26;
+	 border-bottom: 3px dashed #3b2e26;
+	 padding: 10px;
+	 text-align: center;
+}
+/*Hoitopaketit-taulukko*/
+.hoitopaketit table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.hoitopaketit td, th {
+	border: 2px solid #333332;
+	padding: 10px;
+}
+.hoitopaketit td {
+	text-align: left;
+}
+.hoitopaketit th {
+	text-align: center;
+	background-color: #938078;
+}
+/*Hinnasto-taulukko*/
+.hinnasto table{
+	border-collapse: collapse;
+}
+.hinnasto td, th {
+	border: 3px solid #333332;
+	padding: 10px;
+}
+.hinnasto td {
+	text-align: left;
+}
+.hinnasto th {
+	text-align: center;
+	background-color: #938078;
+}
+/*Yhteydenottolomake*/
+.yhteydenottopyyntö_outline {
+	outline: #ccb7ac solid 5px;
+}
+.otsikko_yhteydenotto{
+	text-align: center;
+	padding-top: 20px;
+}
+
+form {
+  max-width: 450px;
+  padding: 6px;
+  margin: auto;
+}
+.button {
+  background-color: #333332;
+  border: none;
+  color: white;
+  border-radius: 20%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+ margin: 4px 2px;
+  cursor: pointer;
+}
+/*FOOTER*/
+.footer{
+	padding: 10px;
+	background: #3b2e26;
+	text-align: center;
+}
+/*Some painikkeet*/
+.fa {
+  padding: 20px;
+  width: 30px;
+  margin: 5px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	color: #b8b574;
+}
+
+/*RESPONSIIVISUUS*/
+/*Alle 650px*/
+@media screen and (max-width: 650px) {
+  .osiot { 
+    flex-direction: column;
+  }
+  .navbar a.oikea {
+	float: left;
+	font-size: 15px;
+}
+/*alle 350px*/
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
